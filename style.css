@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
     font-family: Helvetica;
     background-color: lavenderblush;
@@ -6,16 +8,20 @@
 h1 {
     font-size: 50px;
     font-weight: bold;
-    color: pink;
+    color: rgb(238, 149, 164);;
     text-align: center;
 }
 
 h2 {
     text-align: center;
+    font-size: 30px;
+    color: rgb(238, 149, 164);
 }
 
 .color-container {
     border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
@@ -27,48 +33,97 @@ h2 {
     width: 100px;
     height: 100px;
     padding: 5px;
+    margin: 10px;
     border: 1px solid black;    
     background-color: pink;
 }
 
-.color-panel-green {
+.color-panel-powderblue {
     display: inline-block;
     width: 100px;
     height: 100px;
     padding: 5px;
+    margin: 10px;
     border: 1px solid black;    
-    background-color: seagreen;
+    background-color: powderblue;
 }
 
-.color-panel-yellow {
+.color-panel-papayawhip {
     display: inline-block;
     width: 100px;
     height: 100px;
     padding: 5px;
+    margin: 10px;
     border: 1px solid black;    
-    background-color: yellow;
+    background-color: papayawhip;
 }
 
 .font-container {
     border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
     padding: 30px;
+}
+
+.font-label-helvetica, .font-label-merriweather, .font-label-spacemono {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.font-panel {
+    display: inline-block;
+    padding: 20px;
+}
+
+.font-label-merriweather, .regular-merriweather, .bold-merriweather, .italic-merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+.font-label-spacemono, .regular-spacemono, .bold-spacemono, .italic-spacemono {
+    font-family: 'Space Mono', monospace;
 }
 
 .text-container {
     border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
     padding: 30px;
 }
 
+ul {
+    position: relative; 
+	display: inline-block; 
+	padding-left: 2em; 
+    
+}
+
+.h1-specific {
+    color: black;
+    font-size: 35px;
+}
+
+.h2-specific {
+    color: black;
+    font-size: 25px;
+}
+
+.p-specific {
+    font-size: 18px;
+}
+
 footer {
     bottom: 0;
+    color: rgb(238, 149, 164);
     font-size: small;
-    margin-top: 50px;
+    font-weight: bold;
+    margin-top: 100px;
     position: relative;
     text-align: center;
     width: 100%;
