@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
     font-family: Helvetica;
@@ -76,7 +76,7 @@ h2 {
     background-color: papayawhip;
 }
 
-.font-label-helvetica, .font-label-merriweather, .font-label-spacemono {
+.font-label-helvetica, .font-label-playfair, .font-label-spacemono {
     text-decoration: underline;
     font-weight: bold;
     font-size: 20px;
@@ -87,8 +87,8 @@ h2 {
     padding: 20px;
 }
 
-.font-label-merriweather, .regular-merriweather, .bold-merriweather, .italic-merriweather {
-    font-family: 'Merriweather', serif;
+.font-label-playfair, .regular-playfair, .bold-playfair, .italic-playfair {
+    font-family: 'Playfair Display', serif;
 }
 
 .font-label-spacemono, .regular-spacemono, .bold-spacemono, .italic-spacemono {
