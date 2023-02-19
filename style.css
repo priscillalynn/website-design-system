@@ -18,7 +18,25 @@ h2 {
     color: rgb(238, 149, 164);
 }
 
-.color-container {
+.menu {
+    position: fixed;
+}
+
+.menu a, li {
+    color: rgb(238, 149, 164);
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(145, 96, 129);
+}
+
+.color-container, .font-container, .text-container, .button-container {
     border: 3px solid black;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -58,16 +76,6 @@ h2 {
     background-color: papayawhip;
 }
 
-.font-container {
-    border: 3px solid black;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 30px;
-}
-
 .font-label-helvetica, .font-label-merriweather, .font-label-spacemono {
     text-decoration: underline;
     font-weight: bold;
@@ -85,16 +93,6 @@ h2 {
 
 .font-label-spacemono, .regular-spacemono, .bold-spacemono, .italic-spacemono {
     font-family: 'Space Mono', monospace;
-}
-
-.text-container {
-    border: 3px solid black;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 30px;
 }
 
 ul {
@@ -117,6 +115,135 @@ ul {
 .p-specific {
     font-size: 18px;
 }
+
+.button-1 {
+  background-color: pink;
+  border-radius: 12px;
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:not(:disabled):hover,
+.button-1:not(:disabled):focus {
+  outline: 0;
+  background: palevioletred;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-1:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+.button-2 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-2:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.button-3 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-3:hover {
+  background-color: #fff;
+}
+
+.button-3:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+.button-4 {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-4:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+#to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: lightpink;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  #to-top:hover {
+    color: black;
+  }
 
 footer {
     bottom: 0;
